@@ -14,17 +14,20 @@
 
 }
 
+.portfolio__header{
+    padding: 2% 0% 0% 15%;
+}
+
 
 .header__menu{
-    padding-left:15%;
-    padding-top: 2%;
+    display: flex;
+    gap:80px;
     
-
 }
 
 .header__menu__link{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color:aqua;
     padding-right: 2% ;
@@ -47,16 +50,19 @@ body {
     align-items: center;
     padding:7% 15%; 
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__content{
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
     width:615px;
 }
 
 .presentacion__content__title{
+    width: 75%;
     font-family:  var(--fuente-krona);
     font-size: 36px;
     
@@ -64,22 +70,24 @@ body {
 
 .presentacion__content__paragraph{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
+    width: 75%;
 }
 
 .presentacion__links{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .presentacion__links__subtitle{
     display: flex;
     justify-content: center;
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -87,9 +95,9 @@ body {
     display: flex;
     justify-content: center;
     gap:10px;
-    width: 378px;
+    width: 50%;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-blanco);
@@ -97,11 +105,11 @@ body {
     background-color:var(--color-primario);
     border-radius: 16px;
     text-align: center;
-    padding: 21.5px 0;
+    padding: 21.5px;
 }
 
 .guapo{
-    width: 50vh;
+    width: 50%;
     height: auto;
     border-radius: 16px;
     
@@ -112,12 +120,32 @@ body {
     font-family: var(--fuente-montserrat);
     font-weight: 400;
     color:#000000;
-    font-size: 24px;
+    font-size: 1.5rem;
     background-color: aqua;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 
 .presentacion__links__button:hover{
     background-color: var(--color-gray);
+}
+
+@media(max-width: 1200px ){
+
+    .portfolio__header{
+        padding: 10%  
+    }
+    
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__content{
+        width: auto;
+    }
 }
